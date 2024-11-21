@@ -1,0 +1,107 @@
+.period-tracker {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #f5b6a391;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.period-tracker h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.calculate-btn {
+    background-color: #FF6F61;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.calculate-btn:hover {
+    background-color: #e65c52;
+}
+
+.result {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #333;
+}
+
+.accuracy button {
+    margin: 5px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accuracy button:hover {
+    background-color: #45a049;
+}
+
+.cycle-history {
+    margin-top: 50px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.cycle-history h2 {
+    font-size: 22px;
+    color: #333;
+}
+
+.cycle-history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cycle-history li {
+    background-color: #f7f7f7;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cycle-history .cycle-card {
+    font-size: 16px;
+    color: #555;
+}
+
+.cycle-graph {
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Nav from './Nav';
+import Subscriptions from './Subscriptions';
+import Bucket from './Bucket';
+import ContactForm from './ContactForm';
+import Featured from './Featured';
+import Products from './Products';  // Product details page
+import PeriodTracker from './PeriodTracker';
+import GynacConsultation from './GynacConsultation';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <>
+            <Nav /> {/* The navigation component remains unchanged */}
+            <Routes>
+                {/* Existing Routes */}
+                <Route path="/" element={<Featured />} />
+                <Route path="/Subscriptions" element={<Subscriptions />} />
+                <Route path="/Bucket" element={<Bucket />} />
+                <Route path="/ContactForm" element={<ContactForm />} />
+
+                {/* Route for product details page */}
+                <Route path="/product/:productId" element={<Products />} />
+                <Route path="/PeriodTracker" element={<PeriodTracker />} />
+                <Route path="/GynacConsultation" element={<GynacConsultation />} />
+
+
+               
+            </Routes>
+        </>
+    );
 }
 
 export default App;

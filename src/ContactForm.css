@@ -1,0 +1,110 @@
+/* ContactForm.css */
+.contact-pink-parcel {
+  background-color: #fff5f8; /* Soft pastel pink background */
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-pink-parcel::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background-color: #f8e1eb; /* Subtle decorative circle */
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.contact-pink-parcel .input-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-pink-parcel input,
+.contact-pink-parcel textarea {
+  border: 2px solid #f3d3e0;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 14px;
+  width: calc(50% - 10px);
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.contact-pink-parcel input::placeholder,
+.contact-pink-parcel textarea::placeholder {
+  color: #d2a2b6; /* Softer placeholder */
+}
+
+.contact-pink-parcel input:focus,
+.contact-pink-parcel textarea:focus {
+  border-color: #e8a8c4;
+  outline: none;
+  box-shadow: 0 0 8px rgba(232, 168, 196, 0.3);
+}
+
+.contact-pink-parcel textarea {
+  width: 100%;
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-pink-parcel button {
+  background-color: #e8a8c4;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(232, 168, 196, 0.4);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-pink-parcel button:hover {
+  background-color: #d68ba6;
+  transform: translateY(-3px);
+}
+
+.feedback-message {
+  margin-top: 15px;
+  color: #d17ba2;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-pink-parcel input,
+  .contact-pink-parcel textarea {
+    width: 100%;
+  }
+
+  .contact-pink-parcel .input-row {
+    flex-direction: column;
+  }
+}
+
+.heading {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #d17ba2;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-style: italic;
+}

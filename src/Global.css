@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(235, 246, 220, 0.868);
+    font-family: Arial, sans-serif; /* Add a default font */
+}
+
+img {
+    border-radius: 40px;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2 {
+    margin: 0.5em 0;
+}
+
+button {
+    color: rgb(252, 248, 252);
+    background-color: rgb(189, 77, 144);
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+}
+
+button:hover {
+    background-color: rgb(81, 24, 62);
+}
+.view{
+    width: 140px;
+    height: 50px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+
+}
+.explore{
+   margin-top: 50px;
+    margin-left: 46%;
+    width: 140px;
+    height: 50px;
+}
+/* Featured Section */
+.featuring {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Fheading {
+    margin-bottom: 70px;
+    margin-top: 60px;
+    font-size: clamp(1.2rem, 1.5rem + 1.5vw, 2.5rem);
+    color: #322514;
+}
+
+/* Product Card Styles */
+.product-slider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.package {
+    width: 90%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(242, 239, 239, 0.63);
+    text-align: center;
+    padding: 25px;
+    background-color: #5c012227;
+    margin-bottom: 20px;
+}
+
+.package:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(254, 252, 252, 0.848);
+}
+
+
+
+.sub h1{
+    color: #df97a2;
+    font-size: 3rem;
+    margin-top: 200px;
+    font-size: clamp(1.rem, 2rem + 2vw, 3rem);
+}
+
+.sub h3 {
+    color: #df97a2;
+    margin-top: 5px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1rem;
+    font-size: clamp(1.rem, 2rem + 2vw, 3rem);
+}
+
+
+
+.email-input-container .email-input{
+    color: #df97a2;
+    border: 1px solid #df97a2 ;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left:30px;
+    width: 300px;
+}
+
+.arrow-button{
+    height: 50px;
+    margin-top: 30px;
+    background-color: #df97a2;
+}
+
+/* Footer */
+.footer-section .company-name{
+    font-size: 1.5rem;
+    font-size: clamp(1.rem, 2rem + 2vw, 2.5rem);
+    color: #df97a2;
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: 600;
+}
+.footer-section .contact-number{
+    font-size: 1rem;
+    color: #df97a2;
+    text-align: center;
+    margin-top: 1.2rem;
+    font-weight: 400;
+}
+.footer-section .contact-email{
+    font-size: 1rem;
+    color: #df97a2;
+    text-align: center;
+    margin-top: 1.2rem;
+    font-weight: 400;
+}
+
+.policies{
+    margin-top: 120px;
+    color: #df97a2; 
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.policy-link {
+    color: #df97a2;
+    text-decoration: none;
+    
+}
+
+.policy-link:hover {
+    text-decoration: underline;
+}
+
+.tracker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    min-height: 100vh;
+}
+
+.tracker h1 {
+    color: black;
+    text-shadow: 0 4px 6px rgba(50, 6, 51, 0.421);
+}
+
+/* Container Section */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 70px;
+    
+}
+.container .c{
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+    background-color: #ebf0ec81;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(20, 16, 34, 0.723) ;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+.container .c img{
+width: 450px;
+    height: 60%;
+    padding: 8px;
+}
+.typePackage,.container .c h1{
+   
+    font-weight: 500;
+    text-align: center;
+    font-size: 0.4rem;
+    font-size: clamp(0.4rem, 1rem + 1.2vw, 1.2rem);
+    color: #000000e2;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.p{
+    color: rgba(17, 4, 4, 0.863);
+    font-weight: 600;
+    /* font-size: 40px; */
+    font-size: clamp(0.8rem, 1rem + 1.2vw, 1.3rem);
+}
+.star{
+    font-size: 22px;
+    color: goldenrod;
+}
+

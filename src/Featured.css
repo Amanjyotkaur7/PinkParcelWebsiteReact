@@ -1,0 +1,419 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Section Styles */
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Tagline Styles */
+.Tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Tagimg img {
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.t {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.t1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.shop {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.shop:hover {
+    background-color: #ff4081;
+}
+
+/* Featuring Section */
+.featuring {
+    text-align: center;
+    padding: 20px;
+}
+
+.Fheading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-slider {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.package {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 300px;
+}
+
+.package img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.typePackage {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.star {
+    font-size: 1rem;
+    color: #ffa500;
+}
+
+/* Tracker Section */
+.tracker {
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.c {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+}
+
+.c img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.view {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view:hover {
+    background-color: #ff4081;
+}
+
+/* Intro Section */
+.intro h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.card-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.explore {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore:hover {
+    background-color: #ff4081;
+}
+
+/* Subscription Section */
+.sub {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.email-input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.email-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+}
+
+.arrow-button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.arrow-button:hover {
+    background-color: #ff4081;
+}
+
+/* Footer Section */
+.footer-section {
+    text-align: center;
+    margin: 20px 0;
+    color: #555;
+}
+
+.policies {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.policy-link {
+    color: #ff69b4;
+    text-decoration: none;
+}
+
+.policy-link:hover {
+    text-decoration: underline;
+}
+
+/* Scrollable Tracker Preview Section */
+.tracker-preview {
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #ffe4e1, #ffb6c1);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.preview-header h2 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    margin-bottom: 10px;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.preview-header p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.preview-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+.preview-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.preview-card {
+    flex: 0 0 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: white;
+    animation: slideIn 1s ease-in-out;
+}
+
+.preview-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.preview-card h3 {
+    font-size: 1.5rem;
+    color: #ff69b4;
+    margin: 15px 0;
+}
+
+.preview-card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 10px;
+}
+
+.preview-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.preview-button:hover {
+    background-color: #ff4081;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tracker-preview {
+        padding: 30px 10px;
+    }
+
+    .preview-slider {
+        gap: 10px;
+    }
+
+    .preview-card {
+        flex: 0 0 250px;
+    }
+
+    .preview-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .preview-card p {
+        font-size: 0.9rem;
+    }
+
+    .preview-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
