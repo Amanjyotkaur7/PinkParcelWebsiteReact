@@ -177,19 +177,21 @@ img {
 
 /* Intro Section */
 .intro h1 {
-    font-size: 2rem;
-    margin: 20px 0;
-    color: #333;
+    font-size: 2.5rem;
+    padding-top: 20px;
+    color: #560f45;
 }
 
-.card {
+.container .card {
     border: 1px solid #ddd;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.599);
     padding: 20px;
     margin: 10px;
     text-align: center;
     max-width: 300px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card-heading {
@@ -416,4 +418,13 @@ img {
         opacity: 1;
         transform: translateX(0);
     }
+}
+.why {
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover; /* Make the image cover the entire container */
+    background-position: center;
+    image-rendering: crisp-edges;
+   
 }

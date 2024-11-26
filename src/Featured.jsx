@@ -149,6 +149,7 @@ function Featured() {
       </div>
 
       {/* Intro Section */}
+      <div className='why' style={{ backgroundImage: "url('/img/f.jpg')" }}>
       <div className='intro'>
         <h1><i className="bi bi-flower1"></i> Introducing Pink Parcel: Your Ultimate Care Companion  <i className="bi bi-flower1"></i></h1>
       </div>
@@ -161,6 +162,7 @@ function Featured() {
             <p>{card.text}</p>
           </div>
         ))}
+      </div>
       </div>
       <div className="sub">
                 <h1>Subscribe to our emails</h1>

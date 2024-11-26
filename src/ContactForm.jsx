@@ -306,7 +306,6 @@ const ContactForm = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [comment, setComment] = useState('');
   const [email, setEmail] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [feedback, setFeedback] = useState('');
 
   const validateEmail = (email) => {
@@ -317,7 +316,7 @@ const ContactForm = () => {
     return /^[0-9]{10}$/.test(phoneNumber);
   };
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     setFeedback('');
 
@@ -337,41 +336,12 @@ const ContactForm = () => {
       return;
     }
 
-    setIsSubmitting(true);
-    try {
-      const response = await fetch('http://localhost/pink/submitContactForm.php', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name, phoneNumber, comment, email }),
-      });
-
-      // Check if response is successful
-      if (!response.ok) {
-        setFeedback(`Error: ${response.status} ${response.statusText}`);
-        return;
-      }
-
-      // Try parsing the response as JSON
-      const result = await response.json();
-
-      // Check for any issues in the response data
-      if (result.error) {
-        setFeedback(`Error: ${result.error}`);
-      } else {
-        setFeedback('Contact form submitted successfully!');
-        setName('');
-        setPhoneNumber('');
-        setComment('');
-        setEmail('');
-      }
-    } catch (error) {
-      // Log and show error message
-      console.error('Error submitting contact form:', error);
-      setFeedback('Error submitting contact form: ' + error.message);
-    }
-    setIsSubmitting(false);
+    alert('Form submitted!');
+    setName('');
+    setPhoneNumber('');
+    setComment('');
+    setEmail('');
+    setFeedback('');
   };
 
   return (
@@ -383,7 +353,7 @@ const ContactForm = () => {
             type="text"
             id="name"
             value={name}
-            placeholder='Name: '
+            placeholder="Name: "
             onChange={(event) => setName(event.target.value)}
             required
           />
@@ -393,7 +363,7 @@ const ContactForm = () => {
             type="tel"
             id="phoneNumber"
             value={phoneNumber}
-            placeholder='Phone Number: '
+            placeholder="Phone Number: "
             onChange={(event) => setPhoneNumber(event.target.value)}
             required
           />
@@ -403,7 +373,7 @@ const ContactForm = () => {
             type="email"
             id="email"
             value={email}
-            placeholder='Email: '
+            placeholder="Email: "
             onChange={(event) => setEmail(event.target.value)}
             required
           />
@@ -412,17 +382,15 @@ const ContactForm = () => {
           <textarea
             id="comment"
             value={comment}
-            placeholder='Comment: '
+            placeholder="Comment: "
             onChange={(event) => setComment(event.target.value)}
             required
           />
         </div>
-        <button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? 'Sending...' : 'Send'}
-        </button>
+        <button type="submit">Send</button>
         {feedback && <p className="feedback-message">{feedback}</p>}
       </form>
-      <div className='sub'>
+      <div className="sub">
         <h1>Subscribe to our emails</h1>
         <h3>Join our email list for exclusive offers and the latest news.</h3>
       </div>
@@ -437,10 +405,21 @@ const ContactForm = () => {
       </div>
       <div className="policies">
         <span>© 2024, Pink Parcel Powered by Shopify · </span>
- <a href="#refund-policy" className="policy-link">Refund policy</a> · 
-        <a href="#privacy-policy" className="policy-link">Privacy policy</a> · 
-        <a href="#terms-service" className="policy-link">Terms of service</a> · 
-        <a href="#shipping-policy" className="policy-link">Shipping policy</a>
+        <a href="#refund-policy" className="policy-link">
+          Refund policy
+        </a>{' '}
+        ·
+        <a href="#privacy-policy" className="policy-link">
+          Privacy policy
+        </a>{' '}
+        ·
+        <a href="#terms-service" className="policy-link">
+          Terms of service
+        </a>{' '}
+        ·
+        <a href="#shipping-policy" className="policy-link">
+          Shipping policy
+        </a>
       </div>
     </>
   );

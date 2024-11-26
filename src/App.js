@@ -8,6 +8,7 @@ import Featured from './Featured';
 import Products from './Products';  // Product details page
 import PeriodTracker from './PeriodTracker';
 import GynacConsultation from './GynacConsultation';
+import PaymentGateway from './PaymentGateway';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/product/:productId" element={<Products />} />
                 <Route path="/PeriodTracker" element={<PeriodTracker />} />
                 <Route path="/GynacConsultation" element={<GynacConsultation />} />
+                <Route path="/PaymentGateway" element={<PaymentGateway />} />
 
 
                
